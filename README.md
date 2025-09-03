@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# 💰 AI-Based Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack expense management system that tracks income & expenses, uses AI/ML for automatic categorization, provides financial insights via chatbot, and includes an admin panel for user management.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🏗️ Project Architecture
 
-### `npm start`
+- **Frontend (React + Tailwind CSS)**  
+  - User dashboard (income, expenses, balance, category-wise charts)  
+  - Authentication pages (login/register)  
+  - Integrated finance chatbot (Gemini API)  
+  - Admin panel for CRUD operations on users
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Backend (Node.js + Express + MongoDB)**  
+  - JWT-based authentication  
+  - REST APIs for income, expenses, and user management  
+  - Secured routes for logged-in users  
+  - Data persistence in MongoDB
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **AI Service (Python + Flask)**  
+  - Machine learning model to predict expense categories  
+  - Connected to frontend via REST API (`/predict-category`)
 
-### `npm test`
+- **Chatbot (Gemini API)**  
+  - Fetches user’s financial records  
+  - Provides insights, savings suggestions, and summaries
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the repository
+```bash
+git clone <repo-url>
+cd <project-folder>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Setup Backend
+cd backend
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Create a .env file in the backend
+MONGO_URI=<your-mongo-uri>
+JWT_SECRET=<your-secret>
+PORT=5000
 
-### `npm run eject`
+Run the backend server:
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Setup Frontend
+cd ../frontend
+npm install
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. Setup AI Service (ML Model)
+cd ../ml
+pip install -r requirements.txt
+python app.py
