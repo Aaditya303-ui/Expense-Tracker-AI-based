@@ -1,0 +1,149 @@
+/* Main container */
+.admin-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.admin-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.admin-header h2 {
+  font-size: 28px;
+  margin: 0;
+  color: #273c75;
+}
+
+.admin-header p {
+  color: #718093;
+  font-size: 16px;
+  margin-top: 8px;
+}
+
+/* Form */
+.admin-form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.admin-form input,
+.admin-form select {
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  flex: 1;
+  min-width: 180px;
+  font-size: 14px;
+}
+
+/* Buttons (base style) */
+.create-btn,
+.cancel-btn,
+.edit-btn,
+.delete-btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.2s ease-in-out, transform 0.1s;
+}
+
+.create-btn:hover,
+.cancel-btn:hover,
+.edit-btn:hover,
+.delete-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Button colors */
+.create-btn {
+  background: #28a745;
+  color: #fff;
+}
+
+.create-btn:hover {
+  background: #218838;
+}
+
+.cancel-btn {
+  background: #ffc107;
+  color: #000;
+}
+
+.cancel-btn:hover {
+  background: #e0a800;
+}
+
+.edit-btn {
+  background: #007bff;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #0069d9;
+}
+
+.delete-btn {
+  background: #dc3545;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+/* Table container */
+.admin-table-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+}
+
+/* Table */
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.admin-table th {
+  background: #273c75;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.admin-table tr:hover {
+  background: #f1f2f6;
+  transition: background 0.2s;
+}
+
+/* No users row */
+.no-users {
+  text-align: center;
+  color: #718093;
+  font-style: italic;
+  padding: 20px 0;
+}

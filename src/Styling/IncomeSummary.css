@@ -1,0 +1,26 @@
+.income-summary-card {
+  background-color: #f0fff4;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-width: 220px;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.income-summary-card:hover {
+  transform: scale(1.02);
+}
+
+.income-summary-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #2e7d32;
+}
+
+.income-amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #388e3c;
+}

@@ -1,0 +1,28 @@
+.stat-card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 12px;
+  width: 230px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stat-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.stat-icon {
+  font-size: 18px;
+}
+
+.stat-amount {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 10px;
+}

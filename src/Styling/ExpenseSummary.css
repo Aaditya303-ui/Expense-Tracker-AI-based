@@ -1,0 +1,55 @@
+/* .expense-summary-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  min-width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.expense-summary-card:hover {
+  transform: translateY(-5px);
+}
+
+.expense-summary-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  color: #e53935;
+} */
+
+.expense-summary-card {
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe); /* soft purple gradient */
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  min-width: 220px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expense-summary-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.expense-summary-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #4a148c; /* deep purple for titles */
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #7b2ff7, #9d4edd); /* bold purple gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* gradient text effect */
+}

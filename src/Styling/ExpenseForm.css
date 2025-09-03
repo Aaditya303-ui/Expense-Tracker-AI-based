@@ -1,0 +1,120 @@
+/* src/components/ExpenseForm.css */
+/* .expense-form {
+  background: #ffffff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.expense-form h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333;
+}
+
+.expense-form input,
+.expense-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.expense-form button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expense-form button:hover {
+  background-color: #0056b3;
+}
+
+.main-content {
+  margin-left: 250px; /* Match the width of your Sidebar 
+  padding: 20px;
+} */
+  
+/* src/components/ExpenseForm.css */
+.expense-form {
+  background: linear-gradient(135deg, #4e54c8, #8f94fb); /* theme gradient */
+  padding: 25px;
+  max-width: 420px;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff; /* make text white */
+}
+
+.expense-form:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+}
+
+.expense-form h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff; /* white for contrast */
+}
+
+.expense-form input,
+.expense-form select {
+  width: 92%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.expense-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.expense-form button {
+  width: 100%;
+  background: #fff;
+  color: #4e54c8;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.expense-form button:hover {
+  background: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.main-content {
+  margin-left: 250px; /* match sidebar */
+  padding: 25px;
+}
+

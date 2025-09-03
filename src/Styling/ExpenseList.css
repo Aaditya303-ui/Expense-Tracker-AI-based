@@ -1,0 +1,92 @@
+/* .expense-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.expense-list h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #222;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+}
+
+.expense-card {
+  background-color: #f9f9f9;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.expense-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.expense-category {
+  background-color: #e0e0e0;
+  padding: 2px 8px;
+  border-radius: 6px;
+} */
+
+.expense-list {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.expense-list h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #4a148c; /* Deep purple */
+  border-bottom: 2px solid rgba(138, 43, 226, 0.2); /* subtle purple underline */
+  padding-bottom: 8px;
+  font-weight: 600;
+}
+
+.expense-card {
+  background: linear-gradient(135deg, #f3e8ff, #ede9fe); /* soft purple gradient */
+  margin-bottom: 14px;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.expense-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.expense-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #2c2c2c;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #555;
+}
+
+.expense-category {
+  background: linear-gradient(135deg, #8758ff, #a77bff); /* purple tag */
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
